@@ -17,9 +17,7 @@ long i = 0;
 void loop() {
   
 	if (Serial2.available()) {
-
-		data = Serial2.readStringUntil('\n');
-		if(data.charAt(0) == 'P') Serial.print(data);
+		Serial.print((char)Serial2.read());
 	}
 	/*
 	i++;

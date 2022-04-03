@@ -4,6 +4,12 @@
  Author:	renau
 */
 
+String data;
+String ppap;
+String base;
+
+int ppapVal;
+long baseVal;
 
 void setup() {
 	Serial.begin(9600);
@@ -16,12 +22,20 @@ long i = 0;
 void loop() {
   
 	if (Serial2.available()) {
-		Serial.print((char)Serial2.read());
-	}
-	/*
-	i++;
-	Serial.printf("Test \"Serial\" - %d\n", i);
-	delay(500);
-	*/
 
+		data = Serial2.readStringUntil('\n');
+		if (data.startsWith("PAPP")) { 
+			ppap = data.substring(5,10);
+			ppapVal = ppap.toInt();
+			Serial.print("Power: ");
+			Serial.println(ppapVal);
+		}
+		if (data.startsWith("BASE")) {
+			base = data.substring(5,14);
+			baseVal = base.toInt();
+			Serial.print("base:");
+			Serial.println(baseVal);
+		}
+
+	}
 }
