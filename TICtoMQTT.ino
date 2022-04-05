@@ -4,6 +4,15 @@
  Author:	renau
 */
 
+
+
+#include <WiFi.h>   
+#include <DNSServer.h>
+#include <WebServer.h>
+#include <WiFiManager.h>
+#include <strings_en.h>
+
+
 String data;
 String ppap;
 String base;
@@ -11,9 +20,15 @@ String base;
 int ppapVal;
 long baseVal;
 
+WiFiManager wifiManager;
+
+
+
 void setup() {
 	Serial.begin(9600);
 	Serial2.begin(1200, SERIAL_7N1);
+	wifiManager.autoConnect("TICtoMQTT");
+
 }
 
 long i = 0;
