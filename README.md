@@ -25,3 +25,6 @@ The present code was sucessfully tested on ESP32 boards, using ``Serial2`` (othe
 Main software to pass BASE and PPAP values over MQTT
 ### HWtest
 [HWtest](./HWtest) is a quick sketch to get raw frame content
+
+## References 
+[MQTT on ESP](https://randomnerdtutorials.com/esp32-mqtt-publish-subscribe-arduino-ide/)
