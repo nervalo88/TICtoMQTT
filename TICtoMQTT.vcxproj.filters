@@ -21,5 +21,8 @@
     <ClInclude Include="__vm\.TICtoMQTT.vsarduino.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Secret.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
