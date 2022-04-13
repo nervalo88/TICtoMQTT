@@ -59,7 +59,10 @@
         "courtyards_overlap|102222872|82870001|070b0340-976b-4974-ba01-f7973267eaea|62e7cf34-85cf-42c8-b04f-4c157bb8e28b",
         "courtyards_overlap|105100001|82870001|070b0340-976b-4974-ba01-f7973267eaea|80c1e3b9-81bd-490f-8c77-9caabc44928b",
         "courtyards_overlap|105195001|82870001|070b0340-976b-4974-ba01-f7973267eaea|80c1e3b9-81bd-490f-8c77-9caabc44928b",
-        "courtyards_overlap|105195001|82870001|62e7cf34-85cf-42c8-b04f-4c157bb8e28b|80c1e3b9-81bd-490f-8c77-9caabc44928b"
+        "courtyards_overlap|105195001|82870001|62e7cf34-85cf-42c8-b04f-4c157bb8e28b|80c1e3b9-81bd-490f-8c77-9caabc44928b",
+        "items_not_allowed|158837500|104140000|f9cb99d2-037a-4225-bd3a-68863e2a34af|00000000-0000-0000-0000-000000000000",
+        "items_not_allowed|161290000|107950000|86fbe796-5079-404f-a484-8e331ab3fe18|00000000-0000-0000-0000-000000000000",
+        "items_not_allowed|161290000|113030000|b695beee-10af-49fc-b958-675b1f9b1740|00000000-0000-0000-0000-000000000000"
       ],
       "meta": {
         "version": 2
@@ -337,7 +340,7 @@
       "net_not_bus_member": "warning",
       "no_connect_connected": "warning",
       "no_connect_dangling": "warning",
-      "pin_not_connected": "error",
+      "pin_not_connected": "ignore",
       "pin_not_driven": "error",
       "pin_to_pin": "warning",
       "power_pin_not_driven": "warning",
@@ -387,7 +390,7 @@
       "idf": "",
       "netlist": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "TICtoUART.step",
       "vrml": ""
     },
     "page_layout_descr_file": ""

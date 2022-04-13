@@ -18,13 +18,16 @@ full documentation (french) : https://www.enedis.fr/media/2027/download
 ## Hardware
 Check [./Hardware](./Hardware) for kicad project
 Only includes level conversion parts for UART
-The present code was sucessfully tested on ESP32 boards, using ``Serial2`` (other attempts with ``SoftwareSerial`` gave good results).
+The present code was sucessfully tested on ESP32 boards, using ``Serial2`` (other attempts with ``SoftwareSerial`` also works).
 
 ## Sofware
 ### TICtoMQTT
 Main software to pass BASE and PPAP values over MQTT
 ### HWtest
 [HWtest](./HWtest) is a quick sketch to get raw frame content
+
+## CAD
+Check [./CAD](./CAD) for a 3D printable enclosure for this project, held on DIN rail for electric panels
 
 ## References 
 [MQTT on ESP](https://randomnerdtutorials.com/esp32-mqtt-publish-subscribe-arduino-ide/)
